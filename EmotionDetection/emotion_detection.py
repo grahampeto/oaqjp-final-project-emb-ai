@@ -21,6 +21,6 @@ def emotion_detector(text_to_analyse):
     'joy': joy_score,
     'sadness': sadness_score,}
     sorted_emotions = sorted(result_dict.items(), key=lambda x: x[1])
-    result_dict['dominant_emotion'] = sorted_emotions[len(sorted_emotions)-1]
+    result_dict['dominant_emotion'] = sorted_emotions[len(sorted_emotions)-1][0]
     return result_dict
     
